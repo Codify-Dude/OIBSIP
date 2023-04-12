@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BtFunctions"
+    android:background="@drawable/gradientblue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:id="@+id/from"
+            android:hint="From"
+
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            >
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/convertFrom"
+                android:inputType="none"
+                android:textSize="20sp"
+                >
+            </AutoCompleteTextView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:id="@+id/primaryTextView1"
+            android:maxLength="15"
+            android:text="0"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:textAlignment="center"
+            app:autoSizeMaxTextSize="40sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="vertical"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:id="@+id/to"
+            android:hint="To"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            >
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/convertTo"
+                android:inputType="none"
+                android:textSize="20sp"
+                >
+
+            </AutoCompleteTextView>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/primaryTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:textColor="#36454F"
+            app:autoSizeMaxTextSize="40sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|bottom"
+        android:layout_weight="1"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+
+            <Button
+                android:id="@+id/clickedOne"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginVertical="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+
+
+            <!--                style="?android:attr/borderlessButtonStyle"-->
+
+
+            <Button
+                android:id="@+id/clickedTwo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginVertical="15dp"
+                android:layout_weight="1"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+            <Button
+                android:id="@+id/clickedThree"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginVertical="15dp"
+                android:layout_weight="1"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+            <Button
+                android:id="@+id/clickedReset"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginVertical="15dp"
+                android:layout_weight="1"
+                android:text="C"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginVertical="15dp"
+                android:textColor="@color/black"
+                android:id="@+id/clickedFour"
+                android:layout_weight="1"
+                android:text="4"
+                android:textSize="35sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginVertical="15dp"
+                android:textColor="@color/black"
+                android:id="@+id/clickedFive"
+                android:layout_weight="1"
+                android:text="5"
+                android:textSize="35sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginVertical="15dp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:id="@+id/clickedSix"
+                android:text="6"
+                android:textSize="35sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginVertical="15dp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:text=""
+                android:enabled="false"
+                android:textSize="35sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginVertical="15dp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:id="@+id/clickedSeven"
+                android:text="7"
+                android:textSize="35sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginVertical="15dp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:id="@+id/clickedEight"
+                android:text="8"
+                android:textSize="35sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginVertical="15dp"
+                android:layout_weight="1"
+                android:id="@+id/clickedNine"
+                android:text="9"
+                android:textSize="35sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/black"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginVertical="15dp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:text=""
+                android:enabled="false"
+                android:textSize="35sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginVertical="15dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:id="@+id/clickedDoubleZero"
+                android:text="00"
+                android:textSize="35sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginVertical="15dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:id="@+id/clickedZero"
+                android:text="0"
+                android:textSize="35sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginVertical="15dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:id="@+id/clickedDot"
+                android:text="."
+                android:textSize="35sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginVertical="15dp"
+                android:layout_marginHorizontal="8dp"
+                android:drawableLeft="@drawable/clear"
+                android:text="X"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
